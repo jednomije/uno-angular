@@ -1,0 +1,6 @@
+<div cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="drop($event)" class="hand">
+    <div class="handDiv" *ngFor="let src of array">
+      <app-card src={{src}}></app-card>
+    </div>
+</div>
+            
