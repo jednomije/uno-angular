@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-game',
-  template: `
-    <app-discard></app-discard>
-    <app-hand></app-hand>
-  `,
-  styles: [
-  ]
+  templateUrl: './game.component.html',
+  styleUrls: ['./game.component.scss']
 })
 export class GameComponent{
-
 
 }

@@ -10,6 +10,6 @@ import {CdkDragDrop, transferArrayItem} from '@angular/cdk/drag-drop';
 
 export class DiscardComponent {
 
-  src="assets/img/cards/R1.png";
+  src="assets/img/cards/DISCARD.png";
 
 }
