@@ -1,0 +1,24 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Game</th>
+            <th scope="col">Text</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let comment of comments">
+            <td>{{ comment.ident }}</td>
+            <td>{{ comment.username }}</td>
+            <td>{{ comment.game }}</td>
+            <td>{{ comment.text }}</td>
+            <td>{{ comment.commented_on }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

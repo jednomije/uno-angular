@@ -1,0 +1,24 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Game</th>
+            <th scope="col">Score</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let score of scores">
+            <td>{{ score.ident }}</td>
+            <td>{{ score.username }}</td>
+            <td>{{ score.game }}</td>
+            <td>{{ score.points }}</td>
+            <td>{{ score.played_on }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
