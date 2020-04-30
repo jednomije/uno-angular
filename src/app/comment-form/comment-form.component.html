@@ -1,0 +1,28 @@
+<div class="card my-5">
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" #commentForm="ngForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" [(ngModel)]="comment.username" 
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required #name="ngModel">
+        </div>
+        <div [hidden]="!name.pristine" class="alert alert-danger">Name is required</div>
+        <div class="form-group">
+          <label for="text">Text</label>
+          <input type="text" [(ngModel)]="comment.text" 
+            class="form-control"
+            id="text"
+            name="text"
+            placeholder="Enter your comment"
+            required #text="ngModel">
+          <div [hidden]="!text.pristine" class="alert alert-danger">Comment text is required</div>
+        </div>
+        <button type="submit" [disabled]="!commentForm.form.valid" 
+          class="btn btn-info">Submit</button>
+      </form>
+    </div>
+  </div>
