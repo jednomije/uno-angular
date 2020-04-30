@@ -11,6 +11,10 @@ import { GameComponent } from './game/game.component';
 import { CommentSiteComponent } from './comment-site/comment-site.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ScoreSiteComponent } from './score-site/score-site.component';
+import { CommentFormComponent } from './comment-form/comment-form.component';
+import { RatingFormComponent } from './rating-form/rating-form.component';
+import { MainSiteComponent } from './main-site/main-site.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,13 +25,17 @@ import { ScoreSiteComponent } from './score-site/score-site.component';
     GameComponent,
     CommentSiteComponent,
     ScoreSiteComponent,
+    CommentFormComponent,
+    RatingFormComponent,
+    MainSiteComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DragDropModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

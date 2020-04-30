@@ -8,9 +8,5 @@ import { Router, NavigationStart, NavigationError, Event } from '@angular/router
 })
 
 export class AppComponent {
-  title = 'uno-angular';
-  hidden=false; 
-  clicked() {
-    this.hidden=true;
-  }
+  
 }
